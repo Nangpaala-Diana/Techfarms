@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assests/css/fowls.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/10d6d55153.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"
+    />
+
+    <title>TECH FARM</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <img
+          src="../assests/images/logo 2.webp"
+          height="100px"
+          width="100px"
+          alt="logo"
+        />
+        <div class="wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="searchTerm"
+              placeholder="What are you looking for?"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <button class="cart-btn">
+              <a href=""
+                ><i class="fa-sharp fa-solid fa-cart-shopping"></i>CART</a
+              >
+            </button>
+          </li>
+          <li>
+            <button class="sell-btn"><a href="">SELL NOW</a></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="cart-section">
+      <div class="carti" style="color: #fff">
+        ALL CATEGORIES<i class="fa-sharp fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="nav-2">
+        <div>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Feeds</a></li>
+            <li><a href="../pages/eggs.html">Eggs</a></li>
+            <li><a href="">Fowls</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float:right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+   margin: 4px 0px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+
+    <!-- <section id="product1" class="section-p1">
+      <h2 style="color: Red">Recently Added</h2>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="../assets/images/black fowl.jpg" alt="" />
+          <div class="des">
+            <span>cock</span>
+            <h5>fowl with a very good weight</h5>
+            <div class="star">
+              <h5>Very affortable</h5>
+            </div>
+            <h4>GHC50.00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="../assets/images/Klub boks.jpeg" alt="" />
+          <div class="des">
+            <span>Lamdi farms</span>
+            <h6>Very affortable</h6>
+            <div class="star">
+              <h4>Available at all time</h4>
+            </div>
+            <h4>GH48.00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="../assets/images/brown fowls.jpeg" alt="" />
+          <div class="des">
+            <span>Red hends</span>
+            <h5>As many as you can afford</h5>
+            <div class="star"></div>
+            <h4>GHC500.00 each</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="../assets/images/Nice fowls.jpeg" alt="" />
+          <div class="des">
+            <span>any type of fowl is Available here</span>
+            <h5>very affortable</h5>
+            <div class="star">
+               </div>
+            <h4>Any one and it price</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="../assets/images/f5.jpg"width="250"height="250" alt="" />
+          <div class="des">
+            <h5>Black-ash fowls</h5>
+            <div class="star">
+              
+            </div>
+            <h4>Available</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="../assets/images/f6.jpeg" alt="" />
+          <div class="des">
+            
+            <h5>black fowls</h5>
+            <div class="star">
+             
+            </div>
+            
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="../assets/images/f2.jpeg" alt="" />
+          <div class="des">
+            <span>white fowls</span>
+            <h5>Also Available</h5>
+            <div class="star">
+              </div>
+            <h4>GHC45.00 each</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="../assets/images/f4.jpeg"width="250"height="250" alt="" />
+          <div class="des">
+            <span>Quality always</span>
+            <h5>cool price</h5>
+            <div class="star">
+              <h4>45.00 each</h4>
+              
+            </div>
+          
+        
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html> -->
